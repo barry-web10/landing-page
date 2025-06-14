@@ -32,17 +32,18 @@ body {
 .header-inner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    min-width: 400px;
     width: 50%;
+    height: 100px;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
 }
 
 .header-logo {
     margin-right: 2em;
     font-size: 1.5em;
-    font-weight: 900;
+    font-weight: 700;
     color: #F9FAF8;
 }
 
@@ -62,6 +63,7 @@ a,
     text-decoration: none;
     font-size: 1.12em;
     color: #E5E7EB;
+    width: 450px;
 }
 
 .hero-container {
@@ -73,14 +75,16 @@ a,
     display: flex;
     margin: 0 auto;
     flex: 0 1 50%;
+    margin-bottom: 2%;
+    flex-wrap: wrap;
 }
 
 .hero-info-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex: 0 1 45%;
+    flex: 0 1 50%;
     margin-right: auto;
-    height: 75%;
     margin-bottom: 2em;
 }
 
@@ -88,6 +92,7 @@ a,
     font-size: 3em;
     color: #F9FAF8;
     font-weight: 900;
+    width: 400px;
 }
 
 .hero-btn {
@@ -98,14 +103,15 @@ a,
     border: none;
     border-radius: 0.4em;
     margin-top: 1em;
+    width: 105px;
 }
 
 .placeholder-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75%;
-    flex: 0 0 50%;
+    height: 224px;
+    width: 500px;
     background-color: grey;
 }
 
@@ -113,16 +119,16 @@ a,
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 0.5%;
+    margin-top: 2rem;
 }
 
 .img-wrapper {
     display: flex;
     justify-content: center;
     margin: 0.8% auto;
-    gap: 2%;
+    gap: 36px;
     width: 100%;
-    margin: 1rem auto;
+    margin: 2rem auto;
     flex-wrap: wrap;
 }
 
@@ -141,4 +147,32 @@ a,
 
 .text-img-container > p {
     text-align: center;
+}
+
+.quote-container {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.quote-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 0 1 530px;
+}
+
+.quote-wrapper > p {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.author {
+    align-self: flex-end;
+    font-weight: 700;
 }
