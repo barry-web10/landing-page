@@ -13,12 +13,14 @@ body {
     padding: 0;
     font-family: "Roboto", sans-serif;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
 }
 
 .header-container,
 .hero-container,
-.header-links {
+.header-links,
+.copyright {
     background-color: #1F2937;
     color: #FFFFFF;
 }
@@ -155,7 +157,7 @@ a,
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 3.95rem;
 }
 
 .quote-wrapper {
@@ -176,6 +178,7 @@ a,
 .author {
     align-self: flex-end;
     font-weight: 700;
+    padding: 0;
 }
 
 .action-container {
@@ -219,4 +222,9 @@ a,
     border-radius: 6px;
     width: 110px;
     height: 2.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
 }
